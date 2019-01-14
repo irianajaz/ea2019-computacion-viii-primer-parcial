@@ -1,0 +1,10 @@
+/* En CSS se describen reglas y estas pueden ser
+   de tipo etiqueta, de tipo clase y de tipo id.
+   Cada regla consta de un nombre y sus propiedades.
+   Cada propiedad consta de un nombre y valor. */
+
+/* Ejemplo de regla de tipo etiqueta */
+body {
+    background-color: brown;
+    color: white;
+}
