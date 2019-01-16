@@ -7,14 +7,44 @@
     <title>Hola UAdeO desde VSCode</title>
     <!-- 1 de 3 formas de incluir CSS en HTML -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- 2: Document CSS; se utiliza la etiqueta style dentro de head -->
+    <style>
+    /* Reglas CSS */
+    /* Tipo etiqueta */
+        p {
+            font-size: 1.2em;
+        }
+
+    /* Tipo clase */
+        .sangria {
+            padding: 20px;
+        }
+        .negrita { font-weight: bold; }
+        .subrayada { text-decoration: underline; }
+    /* Tipo identificador */
+
+    </style>
 </head>
 <body>
     <img src="images/logo.png" alt="logo de la escuela">
     <h1>Universidad Autonoma de Occidente</h1>
+    <p class="sangria">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="negrita subrayada">Sed beatae assumenda blanditiis amet.</span> Veniam architecto ab vitae natus sapiente quae. Commodi sapiente iste saepe voluptate, soluta maxime eum autem velit.
+    </p>
+    <p class="sangria">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus nemo unde perspiciatis tempore odio at quae tenetur et, minima mollitia nam! Beatae maxime optio quidem ipsa odio molestiae mollitia maiores.
+    </p>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae assumenda blanditiis amet. Veniam architecto ab vitae natus sapiente quae. Commodi sapiente iste saepe voluptate, soluta maxime eum autem velit.
     </p>
-    <p>
+    <!-- 1: Inline CSS; se utiliza el atributo style de cada etiqueta -->
+    <p style="text-align: justify;color: aqua;font-style: italic;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <strong style="text-decoration: underline;">Accusamus nemo unde perspiciatis</strong> tempore odio at quae tenetur et, minima mollitia nam! Beatae maxime optio quidem ipsa odio molestiae mollitia maiores.
+    </p>
+    <p style="text-align: justify;color: aqua;font-style: italic;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae assumenda blanditiis amet. Veniam architecto ab vitae natus sapiente quae. Commodi sapiente iste saepe voluptate, soluta maxime eum autem velit.
+    </p>
+    <p style="text-align: justify;color: aqua;font-style: italic;">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus nemo unde perspiciatis tempore odio at quae tenetur et, minima mollitia nam! Beatae maxime optio quidem ipsa odio molestiae mollitia maiores.
     </p>
 </body>
