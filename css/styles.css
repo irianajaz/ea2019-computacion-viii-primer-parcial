@@ -8,3 +8,9 @@ body {
     background-color: brown;
     color: white;
 }
+
+/* Tipo identificador: inicia con # */
+#principal {
+    width: 960px;
+    margin: auto;
+}
