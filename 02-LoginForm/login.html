@@ -13,14 +13,14 @@
         <img src="#" alt="logo de la empresa" sizes="100">
         <h1>Inicio de sesión</h1>
         <div class="form-border">
-            <form action="http://127.0.0.1:8080/login.php" method="POST">
+            <form action="http://localhost:8080/login.php" method="POST">
                 <div class="form-control">
                     <label for="txtUsuario">Usuario:</label>
-                    <input type="text" name="txtUsuario" id="txtUsuario">
+                    <input type="text" name="txtUsuario" id="txtUsuario" required>
                 </div>
                 <div class="form-control">
                     <label for="txtContrasena">Contraseña:</label>
-                    <input type="password" name="txtContrasena" id="txtContrasena">
+                    <input type="password" name="txtContrasena" id="txtContrasena" required>
                     <a href="#">Olvidaste la contraseña?</a>
                 </div>
                 <button type="submit" class="form-control">Iniciar Sesión</button>

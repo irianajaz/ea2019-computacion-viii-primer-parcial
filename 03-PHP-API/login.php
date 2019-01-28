@@ -1,5 +1,5 @@
 <?php
-header('Content-type: applicaction/json');
+header('Content-type: application/json');
 
 $response['validate'] = null;
 if ($_POST) {
