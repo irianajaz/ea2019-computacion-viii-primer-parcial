@@ -1,4 +1,5 @@
 ﻿using System;
+using DAO.Models;
 
 namespace DAO
 {
@@ -6,7 +7,10 @@ namespace DAO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var db = new MySqlContext())
+            {
+                db.Database.EnsureCreated();
+            }
         }
     }
 }

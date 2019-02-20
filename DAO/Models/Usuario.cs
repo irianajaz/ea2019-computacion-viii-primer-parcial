@@ -17,7 +17,7 @@ namespace DAO.Models
         [Required, MaxLength(200)]
         public string CorreoElectronico { get; set; }
 
-        [Required, MaxLength(30)]
+        [MaxLength(30)]
         public string Telefono { get; set; }
 
         [Required, MaxLength(50)]
@@ -28,5 +28,8 @@ namespace DAO.Models
 
         [Required]
         public int RolId { get; set; }
+
+        // utilizado por EFCore
+        public Rol Rol { get; set; }
     }
 }

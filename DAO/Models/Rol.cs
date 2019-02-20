@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -16,5 +17,9 @@ namespace DAO.Models
         
         [Required]
         public int Nivel { get; set; }
+
+        // utilizado por EFCore
+        public List<Permiso> Permisos { get; set; }
+        public List<Usuario> Usuarios { get; set; }
     }
 }

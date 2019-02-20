@@ -1,0 +1,20 @@
+DB: tambos
+-----
+create database tambos;
+use tambos;
+create user 'tambos'@'localhost' identify by '123';
+grant all on tambos.* to 'tambos'@'localhost';
+
+
+
+Roles (Fuerte)
+    id, nombre, descripcion, nivel
+
+Permisos (Debil)
+    id, rol_id, nombre, descripcion
+
+Usuarios (Debil)
+    id, nombre, contraseña, email, telefono, nombres, apellidos, rol_id
+
+
+

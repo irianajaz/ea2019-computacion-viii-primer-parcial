@@ -13,5 +13,8 @@ namespace DAO.Models
         public string Nombre { get; set; }
         [Required, MaxLength(200)]
         public string Descripcion { get; set; }
+
+        // propiedades utilizadas por EFCore
+        public Rol Rol { get; set; }
     }
 }
